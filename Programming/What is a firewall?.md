@@ -23,6 +23,7 @@ A proxy firewall is an early type of firewall device, serving as the gateway fro
 
 Now considered a traditional firewall, a stateful inspection firewall allows or blocks traffic based on state, port, and protocol. It monitors all activity from the opening of a connection until it is closed. Filtering decisions are made based on both administrator-defined rules as well as context, which refers to using information from previous connections and packets belonging to the same connection.
 
+
 ### Web application firewall (WAF)
 
 Web application firewalls act as intermediaries for internal and external networks, handling all communication requests on behalf of the internal network. They offer a high level of security, as they can inspect the content of packets and filter out malicious or unauthorized data. However, their reliance on proxy servers can introduce latency and impact network performance.

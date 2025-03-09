@@ -1,4 +1,4 @@
-### **What is Programming?**
+ **What is Programming?**
 
 **Programming** is the process of writing instructions that a computer can execute to perform specific tasks. These instructions, written in a programming language, define the logic and behavior of software applications, websites, and systems.
 
@@ -10,7 +10,7 @@
 4. **Debugging** – Identifying and fixing errors in the code.
 5. **Testing & Optimization** – Ensuring the program runs correctly and efficiently.
 
-### **Types of Programming**
+### **Types of Programming** 
 
 - **Procedural Programming** – Organizes code into functions (e.g., C, Pascal).
 - **Object-Oriented Programming (OOP)** – Uses objects and classes (e.g., Java, Python, C++).
