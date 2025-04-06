@@ -39,6 +39,7 @@ pg_dump -U your_db_user -h localhost -d your_db_name > backup.sql
 
 
 psql
+~~~bash
 CREATE DATABASE e_university;
 CREATE USER postgres WITH PASSWORD 'postgres';
 ALTER ROLE postgres SET client_encoding TO 'utf8';
@@ -47,15 +48,17 @@ ALTER ROLE postgres SET timezone TO 'Asia/Ashgabat';
 GRANT ALL PRIVILEGES ON DATABASE e_university TO postgres;
 \q
 
+~~~
 
 
 
 
+~~~bash
 psql -U postgres -d e_university -f E_University_Production-2025_03_20_20_04_01-dump.sql
 
+~~~
 
-
-
+~~~bash
 sudo nano /etc/postgresql/*/main/pg_hba.conf
 
 
@@ -63,3 +66,4 @@ local   all   all   peer
 Change `peer` to `md5`:
 
 sudo systemctl restart postgresql
+~~~
