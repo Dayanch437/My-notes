@@ -19,7 +19,8 @@
 
 ### **Why is Programming Important?**
 
-- Powers modern technology (apps, websites, AI, cybersecurity).
+- Powers modeflutter clean
+rn technology (apps, websites, AI, cybersecurity).
 - Enables automation and efficiency.
 - Drives innovation in fields like healthcare, finance, and engineering.
 
