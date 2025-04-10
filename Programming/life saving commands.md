@@ -15,7 +15,7 @@ sudo ufw allow from 192.168.1.100 to any port 10808
 
 
 sudo ip addr del 37.252.22.59/24 dev eth0
-sudo ip addr del 37.252.22.51/24 dev eth0
+sudo ip addr del 37.252.22.51/24 dev eth0 
 
 
 
@@ -66,4 +66,18 @@ local   all   all   peer
 Change `peer` to `md5`:
 
 sudo systemctl restart postgresql
+~~~
+
+
+For network errors
+
+~~~bash
+nmcli connection show
+
+
+nmcli connection delete "Outline TUN Connection"
+
+
+sudo ip link delete outline-tun1
+sudo ip link delete outline-tun0
 ~~~
