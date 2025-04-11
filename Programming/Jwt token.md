@@ -1,62 +1,94 @@
-In Django with JWT (JSON Web Token), **access** and **refresh tokens** are used for user authentication and session management. Here's how they work:
+### 🔐 What is `simple-jwt`?
 
-### 1. **Access Token:**
+`djangorestframework-simplejwt` is a Django package that provides **JWT (JSON Web Token) authentication** for Django REST Framework (DRF).
 
-- **Purpose:** The access token is a short-lived token used to authenticate the user for each request to protected routes.
-    
-- **Lifetime:** Usually expires in a short time (e.g., 15 minutes to an hour) to ensure security.
-    
-- **Content:** It contains information about the user (like user ID, roles, etc.) and is signed using a secret key, ensuring that it cannot be tampered with.
-    
-- **Usage:** When a user logs in, the server issues an access token. This token is included in the `Authorization` header of each subsequent request as `Bearer <access_token>`.
-    
-- **Expiration:** When the access token expires, the user will need to refresh it.
-    
+### 🧠 What is JWT?
 
-### 2. **Refresh Token:**
+JWT is a secure way to handle **user login/authentication** in APIs.
 
-- **Purpose:** The refresh token is used to obtain a new access token when the original access token expires.
+- A user logs in with username & password
     
-- **Lifetime:** Typically longer-lived (e.g., days or weeks).
+- Server returns a **token** (like a key)
     
-- **Content:** It usually contains less information and is only used to request a new access token.
-    
-- **Usage:** When the access token expires, the client sends the refresh token to the server, and the server returns a new access token (and possibly a new refresh token).
-    
-- **Security:** Refresh tokens are typically stored securely (e.g., in HTTP-only cookies) to prevent unauthorized access.
-    
+- The frontend saves the token and sends it with every API request
 
-### Flow:
+### ✅ What does `simple-jwt` do?
 
-1. **Login (Initial Authentication):**
-    
-    - User logs in with their credentials.
-        
-    - Server verifies the credentials and returns both an access token and a refresh token.
-        
-2. **Request with Access Token:**
-    
-    - The client sends requests with the access token in the `Authorization` header.
-        
-    - If the access token is valid, the server processes the request.
-        
-3. **Access Token Expiry:**
-    
-    - When the access token expires, the client sends the expired access token along with the refresh token to the server.
-        
-4. **Refreshing the Access Token:**
-    
-    - The server verifies the refresh token.
-        
-    - If valid, the server generates a new access token and optionally a new refresh token and sends it back to the client.
-        
-5. **Logout:**
-    
-    - On logout, both the access token and refresh token should be invalidated to end the user's session.
-        
+It helps Django to:
 
-### Implementation in Django:
+- Create JWT **access** and **refresh** tokens
+    
+- Verify and decode tokens on every request
+    
+- Support login/logout using JWT
+    
+- Support token refresh (get new access token)
 
-You can use libraries like `djangorestframework-simplejwt` to easily manage JWT tokens. It allows you to create views for obtaining access and refresh tokens.
+### 📦 Example Flow:
 
-Example:
+1. **User logs in:**
+~~~http
+POST /api/token/
+{ "username": "dayanch", "password": "1234" }
+~~~
+
+→ returns:
+~~~json
+{
+  "access": "abc123...",
+  "refresh": "def456..."
+}
+~~~
+- **Frontend stores `access` token** (in localStorage or memory)
+- **Frontend calls protected API:**
+~~~http
+GET /api/user-data/
+Authorization: Bearer abc123...
+~~~
+**If token expires**, refresh it:
+~~~http
+POST /api/token/refresh/
+{ "refresh": "def456..." }
+~~~
+
+⚙️ How to install and use?
+
+~~~bash
+pip install djangorestframework-simplejwt
+~~~
+
+Then in `settings.py`:
+
+~~~
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
+~~~
+
+In your main `urls.py` (e.g., `project/urls.py`):
+~~~bash 
+from django.urls import path
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
+urlpatterns = [
+    # JWT token URLs
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+]
+~~~
+
+In `settings.py`, add:
+~~~bash
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+    'AUTH_HEADER_TYPES': ('Bearer',),
+}
+~~~
