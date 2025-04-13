@@ -264,3 +264,5 @@ Once you have the port open, you can test that your database is performing corre
 python manage.py runserver 0.0.0.0:8000
 
 ```
+
+ALTER USER admin WITH PASSWORD 'new_secure_password';
