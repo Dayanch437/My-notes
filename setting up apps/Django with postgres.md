@@ -266,3 +266,14 @@ python manage.py runserver 0.0.0.0:8000
 ```
 
 ALTER USER admin WITH PASSWORD 'new_secure_password';
+
+
+```bash
+pg_dump -U your_db_user -h localhost -p 5432 your_db_name > backup.sql
+
+```
+
+```bash
+psql -U your_db_user -d your_db_name -f backup.sql
+
+```
