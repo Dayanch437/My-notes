@@ -1,6 +1,8 @@
+psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  Peer authentication failed for user "postgres"
 	
 
-~~~bash
+~~~bashALTER USER postgres WITH PASSWORD 'your_new_password';
+
 
 git config --global url."git@github.com:".insteadOf "https://github.com/"
 
