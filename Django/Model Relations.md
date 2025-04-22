@@ -1,6 +1,6 @@
 ### 1. **`ForeignKey`** (One-to-Many)
 
-A `ForeignKey` is used to create a one-to-many relationship. Each instance of the model that defines the `ForeignKey` will be related to one instance of another model, but the related model can be linked to many instances of the first model.
+A `ForeignKey` is used to create a one-to-many relationship. Each instance of the model that defines the `ForeignKey` will be related to one instance of another model, but the related model can be linked to many instances of the first model
 ~~~python 
 class Author(models.Model):
     name = models.CharField(max_length=100)
