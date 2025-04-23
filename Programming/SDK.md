@@ -2,7 +2,7 @@ An **SDK (Software Development Kit)** is a collection of tools, libraries, docum
 
 ### Key components of an SDK:
 
-- **APIs**: Interfaces to interact with the platform/service.
+- **APIs**: Interfaces to interact with the platform/service. 
     
 - **Libraries**: Pre-written code to handle common tasks.
     
