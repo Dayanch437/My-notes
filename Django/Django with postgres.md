@@ -1,4 +1,4 @@
-	
+Z	
 # How To Use PostgreSQL with your Django Application on Ubuntu 20.04
 
 Published on February 11, 2022
