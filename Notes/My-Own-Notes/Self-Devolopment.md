@@ -1,2 +1,0 @@
-Never beg to someone!
-

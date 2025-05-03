@@ -1,4 +1,4 @@
-### ✅ Recommended Setup for Safe Testing
+✅ Recommended Setup for Safe Testing
 
 1. **Use Virtual Machines (VMs)**:
     
