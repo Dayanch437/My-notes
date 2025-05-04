@@ -83,3 +83,9 @@ nmcli connection delete "Outline TUN Connection"
 sudo ip link delete outline-tun1
 sudo ip link delete outline-tun0
 ~~~
+
+
+~~~bash
+	ALTER USER postgres WITH PASSWORD 'new_password';
+
+~~~
