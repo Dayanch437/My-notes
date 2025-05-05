@@ -110,3 +110,5 @@ location ~* \.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$ {
     add_header Cache-Control "public";
 }
 ~~~
+
+/
