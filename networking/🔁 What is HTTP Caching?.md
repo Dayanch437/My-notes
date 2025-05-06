@@ -1,6 +1,6 @@
  
 **HTTP caching** is the process where responses from the server are stored (cached) either in the **browser**, **CDNs**, or **intermediate proxies**, so that future requests for the same resources don’t need to go all the way to the server again.
-🔧 How HTTP Cache Works
+🔧 How HTTP Cache Workse
 ### Scenario:
 
 You visit a website and request:
