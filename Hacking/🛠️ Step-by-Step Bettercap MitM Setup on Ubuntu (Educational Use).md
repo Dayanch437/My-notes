@@ -14,7 +14,9 @@ Permanently:
 ~~~bash
 sudo nano /etc/sysctl.conf
 ~~~
+
 Uncomment or add this line:
+
 ~~~ini
 net.ipv4.ip_forward=1
 ~~~
