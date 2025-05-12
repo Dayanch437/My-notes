@@ -1,4 +1,4 @@
-~~~bash
+~~~nginx
 stream {
     server {
         listen 8008;
@@ -26,4 +26,3 @@ stream {
     }
 }
 ~~~
-
