@@ -1,4 +1,4 @@
-
+y
 ✅ **Install Redis Server**
 
 ~~~bash
