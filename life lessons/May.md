@@ -15,3 +15,9 @@ Staying calm, thoughtful, and intentional—even in chaos—gives you power over
 
 You can't control everything that happens, but you can control how you respond. Staying calm and thoughtful gives you power in any moment.
 ~~~
+17.05.2025
+~~~
+**"Protect your focus like it’s your time — because it is."**  
+Every distraction has a cost. What you choose to ignore is just as important as what you choose to do. Most people don’t fail from lack of ability — they drown in noise.
+~~~
+
