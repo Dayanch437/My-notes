@@ -47,3 +47,7 @@ Telegram user info boot
 ~~~bash
 @userinfobot
 ~~~
+
+~~~python
+sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban-node.sh)" @ install
+~~~
