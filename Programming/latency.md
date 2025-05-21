@@ -8,9 +8,3 @@ Latency refers to the time delay between the initiation of an action and the occ
 4. **Human-Computer Interaction**: In this context, latency refers to the delay between a user's input (like a mouse click or keystroke) and the system's response. Low latency is crucial for a smooth user experience, especially in real-time applications like gaming or virtual reality.
     
 5. **Storage**: In storage systems, latency is the time it takes for a data request to be fulfilled, from the moment it is initiated to the moment the data is retrieved.
-
-
-ns1.timeweb.ru 
-ns2.timeweb.ru 
-ns3.timeweb.org 
-ns4.timeweb.org
