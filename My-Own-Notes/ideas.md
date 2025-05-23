@@ -7,12 +7,14 @@
 
 ### 2. **Real-time Chat Application**
 
+
 - **Description**: Build a chat app using Django and WebSockets. Allow users to send messages, create rooms, and support real-time notifications.
     
 - **Skills**: Django, Django Channels, WebSockets, PostgreSQL.
     
 
 ### 3. **Blog with User Authentication**
+
 
 - **Description**: Develop a blogging platform where users can create accounts, write, and publish articles. Implement features like comments, categories, and tagging.
     
