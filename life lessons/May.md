@@ -20,4 +20,7 @@ You can't control everything that happens, but you can control how you respond. 
 **"Protect your focus like it’s your time — because it is."**  
 Every distraction has a cost. What you choose to ignore is just as important as what you choose to do. Most people don’t fail from lack of ability — they drown in noise.
 ~~~
-
+29.05.2025
+~~~
+**Time is your most valuable asset** – Don’t waste it on things or people that drain you.
+~~~
