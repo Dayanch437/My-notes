@@ -2,7 +2,7 @@
 
 1. **Use Virtual Machines (VMs)**:
     
-    - One VM as the **attacker** (running `hping3`).
+    - One VM as the **[[attacker]]** (running `hping3`).
         
     - One VM as the **target/server** (e.g., running a web server or ping listener).
         
