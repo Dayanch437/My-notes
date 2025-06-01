@@ -26,6 +26,7 @@ function getMimeType(contentType) {
   if (contentType.includes("xml")) return ContentService.MimeType.XML;
   return ContentService.MimeType.TEXT;
 }
+
 ~~~
 	
 ~~~bash
