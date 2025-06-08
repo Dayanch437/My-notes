@@ -1,0 +1,1 @@
+A **VM (Virtual Machine)** is a **software-based simulation of a physical computer**. It runs an operating system and applications just like a real computer, but it is hosted inside another system.
