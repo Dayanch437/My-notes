@@ -1,6 +1,6 @@
 
 ✅ 1. **Install Bettercap**
-~~~bash
+	~~~bash
 sudo apt update
 sudo apt install bettercap
 ~~~
