@@ -1,4 +1,4 @@
-~~~javascript
+	~~~javascript
 function doGet(e) {
   var url = e.parameter.url;
 

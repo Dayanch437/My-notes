@@ -89,3 +89,26 @@ sudo ip link delete outline-tun0
 	ALTER USER postgres WITH PASSWORD 'new_password';
 
 ~~~
+for installing to Debian
+~~~bash
+# 1. Install dependencies
+sudo apt update
+sudo apt install -y build-essential libssl-dev zlib1g-dev \
+libncurses-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
+# 2. Download Python 3.13 source (replace with latest if needed)
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/3.13.0/Python-3.13.0b1.tgz
+sudo tar xvf Python-3.13.0b1.tgz
+cd Python-3.13.0b1
+
+# 3. Build and install
+sudo ./configure --enable-optimizations
+sudo make -j$(nproc)
+sudo make altinstall  # ⛔ Use altinstall to avoid overwriting system python3
+
+# 4. Register Python 3.13 in alternatives
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3.13 1
+sudo update-alternatives --config python3
+~~~
