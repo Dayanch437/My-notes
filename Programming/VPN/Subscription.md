@@ -1,4 +1,4 @@
-	~~~javascript
+~~~javascript
 function doGet(e) {
   var url = e.parameter.url;
 
@@ -52,5 +52,6 @@ Telegram user info boot
 
 
 ~~~python
-sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban-node.sh)" @ install
+	sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban-node.sh)" @ install
 ~~~
+	
