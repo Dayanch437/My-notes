@@ -26,10 +26,10 @@ function getMimeType(contentType) {
   if (contentType.includes("xml")) return ContentService.MimeType.XML;
   return ContentService.MimeType.TEXT;
 }
+~~~
 
 ~~~
-	
-~~~bash
+bash
 docker cp marzban-marzban-1:/code/app/telegram/utils/shared.py ./shared.py
 ~~~
 

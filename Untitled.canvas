@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"6da56fb5075be9ee","type":"text","text":"\t\t\tmenu\nrestoran forieng_key;\nfoof forieng_key;\n","x":-145,"y":-230,"width":340,"height":160},
+		{"id":"9a62048bb71ff946","type":"text","text":"\tRestoran\nname  string;\nlocation string;\ngeolocation geofield;\nis_vip boolian;\nstar integer;\nphone number;\nmeny forign_key;\nthumnail imagefield;\nworking_time string;\nsocial_links string;\n","x":-122,"y":-680,"width":295,"height":340},
+		{"id":"6cbfcb484f0aa295","type":"text","text":"\t\tfood\n\tcategory forieng_key;\n\tmenu forien_key;\n\tname string;\n\t ingridients sting;\n\t price floatfield;\n\t thumbnail imagefield;\n\t \n\t","x":302,"y":-260,"width":380,"height":220},
+		{"id":"ecbe49bca0a11f35","type":"text","text":"\tcategory\nname string;\n","x":371,"y":-510,"width":243,"height":140}
+	],
+	"edges":[
+		{"id":"b2aa032594f8ca99","fromNode":"9a62048bb71ff946","fromSide":"bottom","toNode":"6da56fb5075be9ee","toSide":"top"},
+		{"id":"b32b5cef7239582d","fromNode":"ecbe49bca0a11f35","fromSide":"bottom","toNode":"6cbfcb484f0aa295","toSide":"top"},
+		{"id":"4a4ecff8156d02f3","fromNode":"6da56fb5075be9ee","fromSide":"right","toNode":"6cbfcb484f0aa295","toSide":"left"}
+	]
+}
