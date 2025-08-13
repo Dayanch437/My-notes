@@ -50,6 +50,7 @@ server {
 }
 ~~~
 
+
 ~~~bash
 server {
     listen 80;
