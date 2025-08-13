@@ -2,7 +2,7 @@
 server {
     listen 80;
     server_name yourdomain.com;
-
+	
     # Django app through Gunicorn socket
     location / {
         proxy_pass http://unix:/run/gunicorn.sock;
